@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body><div class="background">
+    <h1 id="head-box">Authentication Page</h1>
+    <div class="container">
+    <div class="signup">
+        <h1 id="passwordstrength"> </h1>
+        <h3 style="margin-bottom: 5vh;">User SignUp</h3>
+        <input type="password" placeholder="enter your password..." id="sign-up-input" onkeyup="checkPasswordStrength()">
+        <p class="valid" id="sign-up-Valid">Password Saved Succesfully!!</p>
+        <button onclick="signUp()">Sign Up</button>
+
+   
+    </div>
+    <hr>
+    <div class="login">
+        <h3 style="margin-bottom: 5vh;">User Log-in</h3>
+        <input type="password" placeholder="login your password..." id="login-input">
+        <p class="login-valid" id="login-valid">Password verified successfully!! Access granted.</p>
+        <p class="login-invalid" id="login-invalid">Log In failed!! Please check your password.</p>
+        <button onclick="logIn()">log in</button>
+    </div>
+</div>
+</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
